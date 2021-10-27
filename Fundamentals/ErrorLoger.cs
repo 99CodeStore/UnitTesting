@@ -20,7 +20,7 @@ namespace Fundamentals
             LastError = error;
             // log the error to storage;
 
-            ErrorLogged.Invoke(this, Guid.NewGuid());
+            ErrorLogged?.Invoke(this, Guid.NewGuid());
         }
     }
 }

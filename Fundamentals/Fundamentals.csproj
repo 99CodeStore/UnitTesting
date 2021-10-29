@@ -48,6 +48,9 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,18 +65,68 @@
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="HtmlFormater.cs" />
     <Compile Include="Math.cs" />
+    <Compile Include="Mocking\Booking.cs" />
+    <Compile Include="Mocking\BookingHelper.cs" />
+    <Compile Include="Mocking\BookingRepository.cs" />
+    <Compile Include="Mocking\Employee.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Mocking\EmployeeController_Faulty.cs" />
+    <Compile Include="Mocking\EmployeeController.cs" />
+    <Compile Include="Mocking\EmployeeStorage.cs" />
+    <Compile Include="Mocking\FileDownloader.cs" />
     <Compile Include="Mocking\FileReader.cs" />
+    <Compile Include="Mocking\IBookingRepository.cs" />
+    <Compile Include="Mocking\IEmployeeStorage.cs" />
+    <Compile Include="Mocking\IFileDownloader.cs" />
     <Compile Include="Mocking\IFileReader.cs" />
-    <Compile Include="Mocking\Video.cs" />
-    <Compile Include="Mocking\VideoContext.cs" />
+    <Compile Include="Mocking\InstallerHelper.cs" />
+    <Compile Include="Mocking\IVideoRepository.cs" />
+    <Compile Include="Mocking\Video.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Video.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Mocking\VideoRepository.cs" />
     <Compile Include="Mocking\VideoService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Stack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Mocking\Employee.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Employee.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mocking\Employee.dbml.layout">
+      <DependentUpon>Employee.dbml</DependentUpon>
+    </None>
+    <None Include="Mocking\Video.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Video.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mocking\Video.dbml.layout">
+      <DependentUpon>Video.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -24,7 +24,7 @@ namespace Fundaementals.Tests
         {
             var result=_math.GetOddNumbers(limit);
 
-            Assert.That(result, Is.EquivalentTo(new[] { 1, 3, 5 }));
+            Assert.That(result, Is.EquivalentTo(new[] { 1, 3 }));
         }
     }
 }

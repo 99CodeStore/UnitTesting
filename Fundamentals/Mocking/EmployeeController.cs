@@ -23,7 +23,7 @@ namespace Fundamentals.Mocking
             return RedirectToAction();
         }
 
-        private static ActionResult RedirectToAction()
+        private ActionResult RedirectToAction()
         {
             return new RedirectResult();
         }

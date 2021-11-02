@@ -9,5 +9,6 @@ namespace Fundamentals.Mocking
         public DateTime ArrivalDate { get; set; }
         public DateTime DepartureDate { get; set; }
         public string Reference { get; set; }
+      
     }
 }

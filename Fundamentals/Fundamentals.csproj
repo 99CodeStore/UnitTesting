@@ -68,6 +68,7 @@
     <Compile Include="Mocking\Booking.cs" />
     <Compile Include="Mocking\BookingHelper.cs" />
     <Compile Include="Mocking\BookingRepository.cs" />
+    <Compile Include="Mocking\EmailSender.cs" />
     <Compile Include="Mocking\Employee.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -78,12 +79,20 @@
     <Compile Include="Mocking\EmployeeStorage.cs" />
     <Compile Include="Mocking\FileDownloader.cs" />
     <Compile Include="Mocking\FileReader.cs" />
-    <Compile Include="Mocking\IBookingRepository.cs" />
-    <Compile Include="Mocking\IEmployeeStorage.cs" />
-    <Compile Include="Mocking\IFileDownloader.cs" />
-    <Compile Include="Mocking\IFileReader.cs" />
+    <Compile Include="Mocking\HouseKeeper.cs" />
+    <Compile Include="Mocking\HouseKeeperService.cs" />
+    <Compile Include="Mocking\HousekeeperStatementReport.cs" />
+    <Compile Include="Mocking\Interface\IBookingRepository.cs" />
+    <Compile Include="Mocking\Interface\IEmailSender.cs" />
+    <Compile Include="Mocking\Interface\IEmployeeStorage.cs" />
+    <Compile Include="Mocking\Interface\IFileDownloader.cs" />
+    <Compile Include="Mocking\Interface\IFileReader.cs" />
+    <Compile Include="Mocking\Interface\IHousekeeperStatementReport.cs" />
     <Compile Include="Mocking\InstallerHelper.cs" />
-    <Compile Include="Mocking\IVideoRepository.cs" />
+    <Compile Include="Mocking\Interface\IStatementGenerator.cs" />
+    <Compile Include="Mocking\Interface\IUnitOfWork.cs" />
+    <Compile Include="Mocking\Interface\IVideoRepository.cs" />
+    <Compile Include="Mocking\StatementGenerator.cs" />
     <Compile Include="Mocking\Video.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,6 +100,7 @@
     </Compile>
     <Compile Include="Mocking\VideoRepository.cs" />
     <Compile Include="Mocking\VideoService.cs" />
+    <Compile Include="Mocking\XtraMessageBox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
